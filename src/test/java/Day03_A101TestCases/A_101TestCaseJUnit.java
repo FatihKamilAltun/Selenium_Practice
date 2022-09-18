@@ -115,6 +115,10 @@ public class A_101TestCaseJUnit {
         driver.findElement(By.xpath("(//button[@type='button'])[6]")).click();
         Thread.sleep(2000);
 
+        // Kargo
+        driver.findElement(By.xpath("(//div[@class='radio'])[4]")).click();
+        Thread.sleep(2000);
+
         // Adres kaydedildikten sonra kullanıcı "Kaydet ve Devam Et" butonuna tıklar
         driver.findElement(By.xpath("(//button[@type='submit'])[1]")).click();
 
