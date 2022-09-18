@@ -105,5 +105,6 @@ public class AutomationExercise01 {
         driver.findElement(By.xpath("//*[text()=' Delete Account']")).click();
 
         // 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+        // The
     }
 }
