@@ -29,7 +29,8 @@ public class AutomationExercise02 {
     }
 
     @Test
-    public void test01() {
+    public void test01() { // Test Case 2: Login User with correct email and password
+
         // 1. Launch browser
         // 2. Navigate to url 'http://automationexercise.com'
         driver.get("http://automationexercise.com");
@@ -62,7 +63,7 @@ public class AutomationExercise02 {
         driver.findElement(By.xpath("//*[text()=' Delete Account']")).click();
 
         // 10. Verify that 'ACCOUNT DELETED!' is visible
-                // Sayfada hata var
+                // Sayfada hata var (The site is broken)
         driver.findElement(By.xpath("//h1")).isDisplayed();
 
 

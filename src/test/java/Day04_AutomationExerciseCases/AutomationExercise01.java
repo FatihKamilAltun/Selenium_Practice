@@ -10,7 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import java.time.Duration;
 
 public class AutomationExercise01 {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException { // Test Case 1: Register User
         System.setProperty("webdriver.chrome.driver", "src/resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -105,6 +105,6 @@ public class AutomationExercise01 {
         driver.findElement(By.xpath("//*[text()=' Delete Account']")).click();
 
         // 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
-        // The
+        // The site is broken
     }
 }
