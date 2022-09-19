@@ -1,4 +1,4 @@
-package Day04_AutomationExerciseCases;
+package Day09_DemoqaExerciseCases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class demoqa_TestBox {
+public class Demoqa01_TestBox {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "src/resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
