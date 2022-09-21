@@ -1,4 +1,4 @@
-package practiseLessons;
+package practiseLessons01;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;

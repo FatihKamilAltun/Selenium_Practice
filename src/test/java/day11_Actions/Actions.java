@@ -1,5 +1,6 @@
 package day11_Actions;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -14,12 +15,16 @@ public class Actions extends TestBaseAfterBefore {
         driver.get("https://amazon.com");
 
         // 2 Sag ust bolumde bulunan “Account & Lists” menusunun acilmasi icin
-        WebElement WE=driver.findElement(By.xpath("//a[@id='nav-link-accountList']"));
+        // mouse’u bu menunun ustune getirelim
+        WebElement WE = driver.findElement(By.xpath("//a[@id='nav-link-accountList']"));
         actions.moveToElement(WE).perform();
 
-        // mouse’u bu menunun ustune getirelim
         // 3 “Create a list” butonuna basalim
+        driver.findElement(By.xpath("//*[text()='Create a List']")).click();
+
         // 4 Acilan sayfada “Your Lists” yazisi oldugunu test edelim
-        // degisiklik
+        String actualText = driver.findElement(By.xpath("//li[@id='my-lists-tab']")).getText();
+        String expectedText="Your Lists";
+        Assert.assertEquals(expectedText,actualText);
     }
 }

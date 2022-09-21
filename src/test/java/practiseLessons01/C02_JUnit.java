@@ -1,4 +1,4 @@
-package practiseLessons;
+package practiseLessons01;
 
 import org.junit.*;
 
