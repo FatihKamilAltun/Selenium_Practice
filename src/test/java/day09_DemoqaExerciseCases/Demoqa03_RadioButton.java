@@ -5,9 +5,9 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import utilities.TestBaseAfterBefore;
+import utilities.TestBaseBeforeAfter;
 
-public class Demoqa03_RadioButton extends TestBaseAfterBefore {
+public class Demoqa03_RadioButton extends TestBaseBeforeAfter {
     @Test
     public void test01() throws InterruptedException {
         // "https://demoqa.com" sayfasina gidin

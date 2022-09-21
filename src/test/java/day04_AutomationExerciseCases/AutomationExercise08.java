@@ -4,9 +4,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import utilities.TestBaseAfterBefore;
+import utilities.TestBaseBeforeAfter;
 
-public class AutomationExercise08 extends TestBaseAfterBefore {
+public class AutomationExercise08 extends TestBaseBeforeAfter {
     @Test
     public void test01() throws InterruptedException {
         //  1. Launch browser

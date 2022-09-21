@@ -4,9 +4,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utilities.TestBaseAfterBefore;
+import utilities.TestBaseBeforeAfter;
 
-public class AutomationExercise10 extends TestBaseAfterBefore {
+public class AutomationExercise10 extends TestBaseBeforeAfter {
     @Test
     public void test01() {
         // 1. Launch browser

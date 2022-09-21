@@ -4,9 +4,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utilities.TestBaseAfterBefore;
+import utilities.TestBaseBeforeAfter;
 
-public class C01_KoalaHotel extends TestBaseAfterBefore {
+public class C01_KoalaHotel extends TestBaseBeforeAfter {
     @Test
     public void test01() {
         // Kullanici "https://www.koalaresorthotels.com/" sayfasina gider
