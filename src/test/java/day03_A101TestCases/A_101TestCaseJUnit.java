@@ -118,7 +118,7 @@ public class A_101TestCaseJUnit {
         Thread.sleep(2000);
 
         // Kullanıcı adres bilgilerini girer
-        driver.findElement(By.xpath("//textarea[@class='js-address-textarea']")).sendKeys(faker.address().fullAddress()+ Keys.PAGE_DOWN);
+        driver.findElement(By.xpath("//textarea[@class='js-address-textarea']")).sendKeys(faker.address().fullAddress());
         Thread.sleep(2000);
 
 
@@ -127,8 +127,7 @@ public class A_101TestCaseJUnit {
         // Thread.sleep(2000);
 
         // Kullanıcı "Kaydet" butonuna tıklar
-        WebElement kaydetButonu = driver.findElement(By.xpath("//button[@class='button green js-set-country js-prevent-emoji']"));
-        kaydetButonu.click();
+        driver.findElement(By.xpath("//button[@class='button green js-set-country js-prevent-emoji']")).click();
         Thread.sleep(2000);
 
         // Kargo
